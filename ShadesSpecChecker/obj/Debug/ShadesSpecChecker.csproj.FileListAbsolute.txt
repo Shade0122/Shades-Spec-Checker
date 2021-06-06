@@ -1,0 +1,7 @@
+C:\Users\bouak\source\repos\ShadesSpecChecker\ShadesSpecChecker\bin\Debug\ShadesSpecChecker.exe.config
+C:\Users\bouak\source\repos\ShadesSpecChecker\ShadesSpecChecker\bin\Debug\ShadesSpecChecker.exe
+C:\Users\bouak\source\repos\ShadesSpecChecker\ShadesSpecChecker\bin\Debug\ShadesSpecChecker.pdb
+C:\Users\bouak\source\repos\ShadesSpecChecker\ShadesSpecChecker\obj\Debug\ShadesSpecChecker.csprojAssemblyReference.cache
+C:\Users\bouak\source\repos\ShadesSpecChecker\ShadesSpecChecker\obj\Debug\ShadesSpecChecker.csproj.CoreCompileInputs.cache
+C:\Users\bouak\source\repos\ShadesSpecChecker\ShadesSpecChecker\obj\Debug\ShadesSpecChecker.exe
+C:\Users\bouak\source\repos\ShadesSpecChecker\ShadesSpecChecker\obj\Debug\ShadesSpecChecker.pdb
