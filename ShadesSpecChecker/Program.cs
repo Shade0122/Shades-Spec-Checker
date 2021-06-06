@@ -8,7 +8,7 @@ namespace ShadesSpecChecker
         {
             Class.WriteLine("=========================== " + DateTime.Now.ToString() + " =========================== By Shade#0122" + "\n");
 
-            Class.WriteLine("Computer Sytem Hardware: ");
+            Class.WriteLine("Computer System Hardware: ");
             Class.Write("Processor: "); Class.Win32Component("Win32_Processor", "Name");
             Class.Write("USB Controller: "); Class.Win32Component("Win32_USBController", "Name");
             Class.Write("Battery: "); Class.Win32Component("Win32_Battery", "Name");
