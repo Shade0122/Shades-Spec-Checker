@@ -21,7 +21,10 @@ namespace ShadesSpecChecker
             Class.Write("IP: "); Class.IP();
             Class.Write("User Name: " + Environment.UserName + "\n");
             Class.Write("Machine Name: " + Environment.MachineName + "\n");
-
+            Class.Write("Windows Version: " + Class.WindowsVersion() + "\n");
+            Class.Write("Direct3D Version: " + Class.Direct3DVersion() + "\n");
+            Class.Write(".NET Framework Version: " + Class.NETFrameworkVersion() + "\n");
+            Class.Write("Is Visual C++ Installed: " + Class.IsVisualCPPInstalled() + "\n");
             Class.WriteLine("\n" + "Information was last logged: " + DateTime.Now.ToString());
 
             Class.Log();
