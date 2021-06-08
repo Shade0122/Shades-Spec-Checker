@@ -5,3 +5,10 @@ C:\Users\bouak\source\repos\ShadesSpecChecker\ShadesSpecChecker\obj\Debug\Shades
 C:\Users\bouak\source\repos\ShadesSpecChecker\ShadesSpecChecker\obj\Debug\ShadesSpecChecker.csproj.CoreCompileInputs.cache
 C:\Users\bouak\source\repos\ShadesSpecChecker\ShadesSpecChecker\obj\Debug\ShadesSpecChecker.exe
 C:\Users\bouak\source\repos\ShadesSpecChecker\ShadesSpecChecker\obj\Debug\ShadesSpecChecker.pdb
+F:\Shades-Spec-Checker-main\Shades-Spec-Checker-main\ShadesSpecChecker\bin\Debug\ShadesSpecChecker.exe.config
+F:\Shades-Spec-Checker-main\Shades-Spec-Checker-main\ShadesSpecChecker\bin\Debug\ShadesSpecChecker.exe
+F:\Shades-Spec-Checker-main\Shades-Spec-Checker-main\ShadesSpecChecker\bin\Debug\ShadesSpecChecker.pdb
+F:\Shades-Spec-Checker-main\Shades-Spec-Checker-main\ShadesSpecChecker\obj\Debug\ShadesSpecChecker.csprojAssemblyReference.cache
+F:\Shades-Spec-Checker-main\Shades-Spec-Checker-main\ShadesSpecChecker\obj\Debug\ShadesSpecChecker.csproj.CoreCompileInputs.cache
+F:\Shades-Spec-Checker-main\Shades-Spec-Checker-main\ShadesSpecChecker\obj\Debug\ShadesSpecChecker.exe
+F:\Shades-Spec-Checker-main\Shades-Spec-Checker-main\ShadesSpecChecker\obj\Debug\ShadesSpecChecker.pdb
