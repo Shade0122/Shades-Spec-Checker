@@ -1,13 +1,10 @@
 ﻿using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
 using System.Management;
 using System.Net;
 using System.Text;
-using System.Threading;
-using System.Xml;
 
 namespace ShadesSpecChecker
 {
@@ -20,34 +17,40 @@ namespace ShadesSpecChecker
                 throw new KeyNotFoundException(string.Format("Registry key not found: {0}", @"SOFTWARE\Microsoft\Cryptography"));
             if (RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64).OpenSubKey(@"SOFTWARE\Microsoft\Cryptography").GetValue("MachineGuid") == null)
                 throw new IndexOutOfRangeException(string.Format("Index not found: {0}", "MachineGuid"));
-            WriteLine(RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64).OpenSubKey(@"SOFTWARE\Microsoft\Cryptography").GetValue("MachineGuid").ToString());
+            WriteLine(RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64).OpenSubKey(@"SOFTWARE\Microsoft\Cryptography").GetValue("MachineGuid").ToString(),ConsoleColor.White);
         }
 
         public static void IP()
         {
-            WriteLine(new WebClient().DownloadString("http://ipv4bot.whatismyipaddress.com/"));
+            WriteLine(new WebClient().DownloadString("http://ipv4bot.whatismyipaddress.com/"), ConsoleColor.White);
         }
-        public static bool IsVisualCPPInstalled()
-        {
-            return File.Exists("C:\\Windows\\System32\\vcruntime140.dll");
-        }
-        public static string Direct3DVersion()
-        {
-            if (File.Exists("C:\\Windows\\System32\\D3D12.dll")) return "Direct3D 12";
-            else if (File.Exists("C:\\Windows\\System32\\d3d11.dll")) return "Direct3D 11";
-            else if (File.Exists("C:\\Windows\\System32\\d3d10.dll")) return "Direct3D 10";
-            else if (File.Exists("C:\\Windows\\System32\\d3d9.dll")) return "Direct3D 9";
-            else return "Undetected Direct 3D Version";
-        }
-        public static string NETFrameworkVersion() // https://docs.microsoft.com/en-us/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed
-        {
-            const string subkey = @"SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\";
 
-            using (var ndpKey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry32).OpenSubKey(subkey))
-            {
-                return NETVersionDecoder((int)ndpKey.GetValue("Release"));
-            }
+        public static void IsVisualCPPInstalled()
+        {
+            if (File.Exists("C:\\Windows\\System32\\vcruntime140.dll")) WriteLine("True",ConsoleColor.Green); 
+            else WriteLine("False - https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0",ConsoleColor.Red); 
         }
+
+        public static void Is64BitOperatingSystem()
+        {
+            if (Environment.Is64BitOperatingSystem == true) WriteLine("True", ConsoleColor.Green);
+            else WriteLine("False", ConsoleColor.Red);
+        }
+
+        public static void Direct3DVersion()
+        {
+            if (File.Exists("C:\\Windows\\System32\\D3D12.dll")) WriteLine("Direct3D 12", ConsoleColor.White);
+            else if (File.Exists("C:\\Windows\\System32\\d3d11.dll")) WriteLine("Direct3D 11", ConsoleColor.White);
+            else if (File.Exists("C:\\Windows\\System32\\d3d10.dll")) WriteLine("Direct3D 10", ConsoleColor.White);
+            else if (File.Exists("C:\\Windows\\System32\\d3d9.dll")) WriteLine("Direct3D 9", ConsoleColor.White);
+            else WriteLine("Undetected Direct 3D Version", ConsoleColor.White);
+        }
+
+        public static void NETFrameworkVersion()
+        {
+            WriteLine(NETVersionDecoder((int)RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry32).OpenSubKey(@"SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\").GetValue("Release")),ConsoleColor.White);
+        }
+
         private static string NETVersionDecoder(int releaseKey)
         {
             if (releaseKey >= 528040)
@@ -70,9 +73,21 @@ namespace ShadesSpecChecker
                 return ".NET Framework 4.5.1";
             if (releaseKey >= 378389)
                 return ".NET Framework 4.5";
-            return "Undetected Version - Either Not Installed Or Older Than 4.5";
+            else
+                return "Undetected Version - Either Not Installed Or Older Than 4.5";
         }
-        public static string WindowsVersion()
+
+        public static void UserName()
+        {
+            WriteLine(Environment.UserName, ConsoleColor.White);
+        }
+
+        public static void MachineName()
+        {
+            WriteLine(Environment.MachineName, ConsoleColor.White);
+        }
+
+        public static string WindowsVersionClass()
         {
             switch (Environment.OSVersion.Version.Major)
             {
@@ -92,25 +107,34 @@ namespace ShadesSpecChecker
                 default: return "Undetected Windows Version - Likely Older Than XP.";
             }
         }
+
+        public static void WindowsVersion()
+        {
+            WriteLine(WindowsVersionClass(), ConsoleColor.White);
+        }
+
+        public static void NumberOfCPU()
+        {
+            WriteLine("" + Environment.ProcessorCount, ConsoleColor.White);
+        }
+
         public static void Win32Component(string Class, string Syntax) //https://docs.microsoft.com/en-gb/windows/win32/cimwin32prov/computer-system-hardware-classes?redirectedfrom=MSDN
         {
             foreach (ManagementObject managementObject in new ManagementObjectSearcher("root\\CIMV2", "Select * FROM " + Class).Get())
             {
-                WriteLine(Convert.ToString(managementObject[Syntax].ToString()));
+                WriteLine(Convert.ToString(managementObject[Syntax].ToString()) ,ConsoleColor.White);
             }
         }
 
-        public static void WriteLine(string _string)
+        public static void WriteLine(string _string, ConsoleColor color)
         { 
-            if(_string == "") _string = "Error - This Could Be Because The Specific Hardware Item Does Not Apply To Your Device\n";
-            Console.WriteLine(_string);
+            Console.WriteLine(_string, Console.ForegroundColor = color);
             String.Append(_string).Append(Environment.NewLine);
         }
 
-        public static void Write(string _string)
+        public static void Write(string _string, ConsoleColor color)
         {
-            if (_string == "") _string = "Error - This Could Be Because The Specific Hardware Item Does Not Apply To Your Device\n";
-            Console.Write(_string);
+            Console.Write(_string, Console.ForegroundColor = color);
             String.Append(_string);
         }
 
@@ -127,7 +151,7 @@ namespace ShadesSpecChecker
             } 
             catch (Exception exception)
             {
-                WriteLine("Failed to write file, exception caught: " + exception);
+                WriteLine("Failed to write file, exception caught: " + exception, ConsoleColor.Red);
             }
         }
     }

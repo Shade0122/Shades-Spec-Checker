@@ -12,3 +12,10 @@ F:\Shades-Spec-Checker-main\Shades-Spec-Checker-main\ShadesSpecChecker\obj\Debug
 F:\Shades-Spec-Checker-main\Shades-Spec-Checker-main\ShadesSpecChecker\obj\Debug\ShadesSpecChecker.csproj.CoreCompileInputs.cache
 F:\Shades-Spec-Checker-main\Shades-Spec-Checker-main\ShadesSpecChecker\obj\Debug\ShadesSpecChecker.exe
 F:\Shades-Spec-Checker-main\Shades-Spec-Checker-main\ShadesSpecChecker\obj\Debug\ShadesSpecChecker.pdb
+C:\Users\dboua\Downloads\Shades-Spec-Checker-main (1)\Shades-Spec-Checker-main\ShadesSpecChecker\bin\Debug\ShadesSpecChecker.exe.config
+C:\Users\dboua\Downloads\Shades-Spec-Checker-main (1)\Shades-Spec-Checker-main\ShadesSpecChecker\bin\Debug\ShadesSpecChecker.exe
+C:\Users\dboua\Downloads\Shades-Spec-Checker-main (1)\Shades-Spec-Checker-main\ShadesSpecChecker\bin\Debug\ShadesSpecChecker.pdb
+C:\Users\dboua\Downloads\Shades-Spec-Checker-main (1)\Shades-Spec-Checker-main\ShadesSpecChecker\obj\Debug\ShadesSpecChecker.csproj.AssemblyReference.cache
+C:\Users\dboua\Downloads\Shades-Spec-Checker-main (1)\Shades-Spec-Checker-main\ShadesSpecChecker\obj\Debug\ShadesSpecChecker.csproj.CoreCompileInputs.cache
+C:\Users\dboua\Downloads\Shades-Spec-Checker-main (1)\Shades-Spec-Checker-main\ShadesSpecChecker\obj\Debug\ShadesSpecChecker.exe
+C:\Users\dboua\Downloads\Shades-Spec-Checker-main (1)\Shades-Spec-Checker-main\ShadesSpecChecker\obj\Debug\ShadesSpecChecker.pdb

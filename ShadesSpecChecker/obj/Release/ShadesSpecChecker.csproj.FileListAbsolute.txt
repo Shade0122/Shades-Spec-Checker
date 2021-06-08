@@ -5,3 +5,10 @@ C:\Users\bouak\source\repos\ShadesSpecChecker\ShadesSpecChecker\obj\Release\Shad
 C:\Users\bouak\source\repos\ShadesSpecChecker\ShadesSpecChecker\obj\Release\ShadesSpecChecker.exe
 C:\Users\bouak\source\repos\ShadesSpecChecker\ShadesSpecChecker\obj\Release\ShadesSpecChecker.pdb
 C:\Users\bouak\source\repos\ShadesSpecChecker\ShadesSpecChecker\obj\Release\ShadesSpecChecker.csprojAssemblyReference.cache
+C:\Users\dboua\Downloads\Shades-Spec-Checker-main (1)\Shades-Spec-Checker-main\ShadesSpecChecker\bin\Release\ShadesSpecChecker.exe.config
+C:\Users\dboua\Downloads\Shades-Spec-Checker-main (1)\Shades-Spec-Checker-main\ShadesSpecChecker\bin\Release\ShadesSpecChecker.exe
+C:\Users\dboua\Downloads\Shades-Spec-Checker-main (1)\Shades-Spec-Checker-main\ShadesSpecChecker\bin\Release\ShadesSpecChecker.pdb
+C:\Users\dboua\Downloads\Shades-Spec-Checker-main (1)\Shades-Spec-Checker-main\ShadesSpecChecker\obj\Release\ShadesSpecChecker.csproj.CoreCompileInputs.cache
+C:\Users\dboua\Downloads\Shades-Spec-Checker-main (1)\Shades-Spec-Checker-main\ShadesSpecChecker\obj\Release\ShadesSpecChecker.exe
+C:\Users\dboua\Downloads\Shades-Spec-Checker-main (1)\Shades-Spec-Checker-main\ShadesSpecChecker\obj\Release\ShadesSpecChecker.pdb
+C:\Users\dboua\Downloads\Shades-Spec-Checker-main (1)\Shades-Spec-Checker-main\ShadesSpecChecker\obj\Release\ShadesSpecChecker.csproj.AssemblyReference.cache
