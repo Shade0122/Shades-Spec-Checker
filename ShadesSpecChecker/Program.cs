@@ -10,7 +10,7 @@ namespace ShadesSpecChecker
 
             Class.WriteLine("Computer System Hardware:", ConsoleColor.Cyan);
             Class.Write("CPU: ", ConsoleColor.DarkYellow); Class.Win32Component("Win32_Processor", "Name");
-            Class.Write("Number Of CPUs: ", ConsoleColor.DarkYellow); Class.NumberOfCPU();
+            Class.Write("CPU Threads: ", ConsoleColor.DarkYellow); Class.NumberOfCPU();
             Class.Write("Motherboard: ", ConsoleColor.DarkYellow); Class.Win32Component("Win32_BaseBoard", "Product");
             Class.Write("USB Controller: ", ConsoleColor.DarkYellow); Class.Win32Component("Win32_USBController", "Name");
             Class.Write("Desktop Monitor: ", ConsoleColor.DarkYellow); Class.Win32Component("Win32_DesktopMonitor", "MonitorType");
