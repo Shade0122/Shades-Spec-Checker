@@ -33,7 +33,7 @@ Its made using C# and using [Visual Studio 2019](https://visualstudio.microsoft.
 
 Most of the system hardware information that is being shown is from [https://docs.microsoft.com](https://docs.microsoft.com/en-gb/windows/win32/cimwin32prov/computer-system-hardware-classes?redirectedfrom=MSDN) regarding Win32, some use the environment class aswell as some others classes.
 
-After completion, when all the information is gathered it saves in a text document named as `Log.txt`. This can be used for keep track of your computers data, sharing and comparing information with others, etc.
+After completion, when all the information is gathered it saves in a text document named as `Log.txt`. This can be used for keeping track of your computers data, sharing and comparing information with others, etc.
 
 It should look like this for example:
 ```
