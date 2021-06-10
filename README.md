@@ -80,6 +80,7 @@ Is 64 Bit Operating System: True
 
 Information was last logged: 10/06/2021 07:45:14
 ```
+But of course people have different computers meaning different specs and information being gathered by the program, so obviously outputs will vary in information depending on the users computer.
 
 ## How do I add my own contents
 Its very simple and easy todo, using the [Computer System Hardware Class provided by Microsoft Docs](https://docs.microsoft.com/en-gb/windows/win32/cimwin32prov/computer-system-hardware-classes?redirectedfrom=MSDN) you can add many other classes such as [Win32_Fan](https://docs.microsoft.com/en-gb/windows/win32/cimwin32prov/win32-fan) and alot more.
