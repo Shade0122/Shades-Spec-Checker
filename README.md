@@ -7,6 +7,8 @@
     <a href="https://github.com/Shade0122/Shades-Spec-Checker/raw/main/ShadesSpecChecker/bin/Release/ShadesSpecChecker.exe">Download The Program</a>
   ·
     <a href="https://github.com/Shade0122/Shades-Spec-Checker/pulls">Request Features</a>
+    ·
+    <a href="https://github.com/Shade0122/Shades-Spec-Checker/issues">Report Issues</a>
 </p>
 
 <details open="open">
