@@ -35,6 +35,50 @@ Most of the system hardware information that is being shown is from [https://doc
 
 After completion, when all the information is gathered it saves in a text document named as `Log.txt`. This can be used for keep track of your computers data, sharing and comparing information with others, etc.
 
+It should look like this for example:
+`
+=========================== 10/06/2021 07:45:10 =========================== By Shade#0122
+
+Computer System Hardware:
+CPU: AMD A8-9600 RADEON R7, 10 COMPUTE CORES 4C+6G  
+CPU Threads: 4
+Motherboard: A320M-HDV R4.0
+USB Controller: AMD USB 3.0 eXtensible Host Controller - 1.0 (Microsoft)
+Standard Enhanced PCI to USB Host Controller
+AMD USB 3.10 eXtensible Host Controller - 1.10 (Microsoft)
+Desktop Monitor: Generic PnP Monitor
+Video Controller: AMD Radeon R7 Graphics
+Disk Drive: TOSHIBA HDWD110
+Intenso SSD Sata III
+Network Adapter: Microsoft Kernel Debug Network Adapter
+Realtek PCIe GbE Family Controller
+Realtek RTL8192EU Wireless LAN 802.11n USB 2.0 Network Adapter
+Microsoft Wi-Fi Direct Virtual Adapter
+Microsoft Wi-Fi Direct Virtual Adapter
+WAN Miniport (SSTP)
+WAN Miniport (IKEv2)
+WAN Miniport (L2TP)
+WAN Miniport (PPTP)
+WAN Miniport (PPPOE)
+WAN Miniport (IP)
+WAN Miniport (IPv6)
+WAN Miniport (Network Monitor)
+Kaspersky Security Data Escort Adapter
+
+Computer Information:
+User Name: dboua
+Machine Name: DESKTOP-GC4M7UF
+Windows Version: Windows 10
+Machine Guid: 1f669990-96f2-2853-96dd-bcb1dff5a624
+IP: 75.14.69.101
+Direct3D Version: Direct3D 12
+.NET Framework Version: .NET Framework 4.8 Or Later
+Is Visual C++ Installed: True
+Is 64 Bit Operating System: True
+
+Information was last logged: 10/06/2021 07:45:14
+`
+
 ## How do I add my own contents
 Its very simple and easy todo, using the [Computer System Hardware Class provided by Microsoft Docs](https://docs.microsoft.com/en-gb/windows/win32/cimwin32prov/computer-system-hardware-classes?redirectedfrom=MSDN) you can add many other classes such as [Win32_Fan](https://docs.microsoft.com/en-gb/windows/win32/cimwin32prov/win32-fan) and alot more.
 
