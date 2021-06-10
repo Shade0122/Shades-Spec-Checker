@@ -36,7 +36,7 @@ Most of the system hardware information that is being shown is from [https://doc
 After completion, when all the information is gathered it saves in a text document named as `Log.txt`. This can be used for keep track of your computers data, sharing and comparing information with others, etc.
 
 It should look like this for example:
-`
+```
 =========================== 10/06/2021 07:45:10 =========================== By Shade#0122
 
 Computer System Hardware:
@@ -77,7 +77,7 @@ Is Visual C++ Installed: True
 Is 64 Bit Operating System: True
 
 Information was last logged: 10/06/2021 07:45:14
-`
+```
 
 ## How do I add my own contents
 Its very simple and easy todo, using the [Computer System Hardware Class provided by Microsoft Docs](https://docs.microsoft.com/en-gb/windows/win32/cimwin32prov/computer-system-hardware-classes?redirectedfrom=MSDN) you can add many other classes such as [Win32_Fan](https://docs.microsoft.com/en-gb/windows/win32/cimwin32prov/win32-fan) and alot more.
