@@ -94,12 +94,6 @@ Class.Write("Fan: " /*The name of what you want the content to be called.*/, Con
 ```
 And so on you can add as many classes as you want, all syntaxs give out different information like the devices ID, its status and even manufacturer. 
 
-## Contact
-If you want to contact me, report any issue with it or wanna suggest any contents wanting to be added you can either do the following:
-* [Contact Me On Discord: Shade#0122](https://discord.com)
-* [Request Features](https://github.com/Shade0122/Shades-Spec-Checker/pulls)
-* [Report Issues](https://github.com/Shade0122/Shades-Spec-Checker/issues)
-
 ## Insight
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
